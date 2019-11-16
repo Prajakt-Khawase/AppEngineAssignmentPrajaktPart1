@@ -4,9 +4,9 @@ let url = require('url')
 let timesHelloed = 0;
 
 // get method for root call
-app.get('/', (req, res) => {
-      res.send('Welcome to the homepage\n') // Sending the response to browser.
-    })
+app.get('/', (req, res) => {
+    res.send('Welcome to the homepage\n') // Sending the response to browser.
+})
 
 // get method if the request comes with path /hello
 app.get('/hello', (req, res) => {
@@ -22,7 +22,7 @@ app.get('/resetTimesHelloed', (req, res) => {
 
 // get method if the request comes with path /timesHelloed
 app.get('/timesHelloed', (req, res) => {
-    res.send('/ hello is called ' + timesHelloed +' number of times.')
+    res.send('/ hello is called ' + timesHelloed + ' number of times.')
 })
 
 // Configuring the port value to 4001
